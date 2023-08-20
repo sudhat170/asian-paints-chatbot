@@ -11,7 +11,7 @@ import {
 } from "@chatscope/chat-ui-kit-react";
 
 let API_KEY = import.meta.env.VITE_OPEN_AI_KEY;
-// console.log("API_KEY" + API_KEY);
+console.log("API_KEY" + API_KEY);
 const systemMessage = {
   role: "system",
   content:
