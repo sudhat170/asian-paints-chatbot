@@ -11,8 +11,6 @@ import {
 } from "@chatscope/chat-ui-kit-react";
 
 let API_KEY = import.meta.env.VITE_OPEN_AI_KEY;
-console.log("API KEy " + API_KEY) // 123
-// console.log(import.meta.env.DB_PASSWORD) // undefined
 const systemMessage = {
   role: "system",
   content:
@@ -85,7 +83,7 @@ function App() {
         return data.json();
       })
       .then((data) => {
-        console.log(data);
+        // console.log(data);
         setMessages([
           ...chatMessages,
           {
@@ -111,7 +109,7 @@ function App() {
               }
             >
               {messages.map((message, i) => {
-                console.log(message);
+                // console.log(message);
                 return <Message key={i} model={message} />;
               })}
             </MessageList>
